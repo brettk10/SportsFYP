@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+	<main role="main">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			<title>Sports For You Page</title>
+			<link rel="stylesheet" href="Styles.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link href="http://fonts.cdnfonts.com/css/espn" rel="stylesheet">
+			<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+			<script type = "text/javascript" src = "index.js" defer></script>
+			<script type = "text/jscript" src="papaparse.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		</head>
+    <body>
+      <div id = "startPage" class = "container">
+				<div class = "row">
+        	<button class = "center" id = "startButton">Click to Start</button>
+				</div>
+				<div id = "twitterDisplay" class = "row" style = "display: none;">
+					<header id = "FYPHeader">For You Page</header>
+					<div id = "tweet1"></div>
+					<div id = "tweet2"></div>
+					<div id = "tweet3"></div>
+					<div id = "tweet4"></div>
+					<div id = "tweet5"></div>
+					<div id = "tweet6"></div>
+					<div id = "tweet7"></div>
+					<div id = "tweet8"></div>
+					<div id = "tweet9"></div>
+					<div id = "tweet10"></div>
+				</div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal3" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Select Your Sports</h4>
+              </div>
+              <div class="modal-body">
+								<div class = "row">
+									<div class = "col-sm-6">
+		                <input type="checkbox" class = "Checkbox-modal" id="NBA" name="NBABox">
+										<label for="NBABox" class = "Checkbox-modal">NBA</label>
+									</div>
+								</div>
+
+								<div class = "row">
+									<div class = "col-sm-6">
+										<input type="checkbox" class = "Checkbox-modal" id="NFL" name="NFLBox">
+										<label for="NFLBox" class = "Checkbox-modal">NFL</label>
+									</div>
+								</div>
+
+								<div class = "row">
+									<div class = "col-sm-6">
+										<input type="checkbox" class = "Checkbox-modal" id="MLB" name="MLBBox">
+										<label for="MLBBox" class = "Checkbox-modal">MLB</label>
+									</div>
+								</div>
+
+								<div class = "row">
+									<div class = "col-sm-6">
+										<input type="checkbox" class = "Checkbox-modal" id="Formula1" name="F1Box">
+										<label for="F1Box" class = "Checkbox-modal">Formula 1</label>
+									</div>
+								</div>
+
+								<div class = "row">
+									<div class = "col-sm-6">
+										<input type="checkbox" class = "Checkbox-modal" id="NCAAF" name="NCAAFBox">
+										<label for="NCAAFBox" class = "Checkbox-modal">NCAAF</label>
+									</div>
+								</div>
+
+								<div class = "row">
+									<div class = "col-sm-6">
+										<input type="checkbox" class = "Checkbox-modal" id="NCAAB" name="NCAAMBox">
+										<label for="NCAAMBox" class = "Checkbox-modal">NCAAM</label>
+									</div>
+								</div>
+
+								<div class = "row">
+									<div class = "col-sm-6">
+										<input type="checkbox" class = "Checkbox-modal" id="Soccer" name="SoccerBox">
+										<label for="SoccerBox" class = "Checkbox-modal">Soccer</label>
+									</div>
+								</div>
+
+								<div class = "row">
+									<div class = "col-sm-6">
+										<input type="checkbox" class = "Checkbox-modal" id="Golf" name="GolfBox">
+										<label for="GolfBox" class = "Checkbox-modal">Golf</label>
+									</div>
+								</div>
+
+								<div class = "row">
+									<div class = "col-sm-6">
+										<input type="checkbox" class = "Checkbox-modal" id="Tennis" name="TennisBox">
+										<label for="TennisBox" class = "Checkbox-modal">Tennis</label>
+									</div>
+								</div>
+              </div>
+
+              <div class="modal-footer">
+								<button id = "modalStartButton" data-dismiss="modal" type = "button" onclick = "javascript:getTweets()">Start</button>
+              </div>
+            </div>
+					</div>
+          </div>
+        </div>
+    </body>
+
+  </main>
+
+</html>

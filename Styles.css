@@ -1,0 +1,50 @@
+@import url('http://fonts.cdnfonts.com/css/espn');
+
+body {
+  background-color: black !important;
+}
+
+.center {
+  margin: 0;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+#FYPHeader {
+  top: 0% !important;
+  text-align: center !important;
+  background-color: white !important;
+  color: red !important;
+  font-family: 'ESP_Bold', sans-serif!important;
+  font-size: 36px!important;
+}
+
+#startButton {
+  background-color: white !important;
+  color: red;
+  font-family: 'ESP_Bold', sans-serif;
+  font-size: 48px;
+  width: 400px;
+  height: 200px;
+}
+
+#modalStartButton {
+  background-color: white !important;
+  color: red;
+  font-family: 'ESP_Bold', sans-serif;
+}
+
+.modal-title {
+  font-family: 'ESP_Bold', sans-serif;
+  color: red;
+  font-size: 36px;
+}
+
+.Checkbox-modal {
+  font-family: 'Arial', sans-serif;
+  color: red;
+  font-size: 24px;
+}
